@@ -4,6 +4,7 @@ Build/
 
 # Intermediate files
 Intermediate/
+Content/
 
 # Cache files
 Saved/
@@ -21,3 +22,8 @@ DerivedDataCache/
 .idea/
 *.vcxproj*
 *.xcodeproj
+
+
+
+
+
