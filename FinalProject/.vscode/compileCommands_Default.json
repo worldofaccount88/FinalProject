@@ -1,0 +1,42 @@
+[
+	{
+		"file": "/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/Source/FinalProject/FinalProject.Build.cs",
+		"arguments": [
+			"/home/dsmal/GitStuff/GameDev/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/.vscode/compileCommands_Default/FinalProject.1.rsp"
+		],
+		"directory": "/home/dsmal/GitStuff/GameDev/UnrealEngine/Engine/Source"
+	},
+	{
+		"file": "/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/Source/FinalProject/FinalProject.cpp",
+		"arguments": [
+			"/home/dsmal/GitStuff/GameDev/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/.vscode/compileCommands_Default/FinalProject.1.rsp"
+		],
+		"directory": "/home/dsmal/GitStuff/GameDev/UnrealEngine/Engine/Source"
+	},
+	{
+		"file": "/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/Source/FinalProject/FinalProject.h",
+		"arguments": [
+			"/home/dsmal/GitStuff/GameDev/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/.vscode/compileCommands_Default/FinalProject.1.rsp"
+		],
+		"directory": "/home/dsmal/GitStuff/GameDev/UnrealEngine/Engine/Source"
+	},
+	{
+		"file": "/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/Source/FinalProject/Private/Components/MyActorComponent.cpp",
+		"arguments": [
+			"/home/dsmal/GitStuff/GameDev/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/.vscode/compileCommands_Default/FinalProject.1.rsp"
+		],
+		"directory": "/home/dsmal/GitStuff/GameDev/UnrealEngine/Engine/Source"
+	},
+	{
+		"file": "/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/Source/FinalProject/Public/Components/MyActorComponent.h",
+		"arguments": [
+			"/home/dsmal/GitStuff/GameDev/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/.vscode/compileCommands_Default/FinalProject.1.rsp"
+		],
+		"directory": "/home/dsmal/GitStuff/GameDev/UnrealEngine/Engine/Source"
+	}
+]

@@ -1,0 +1,28 @@
+{
+	"configurations": [
+		{
+			"name": "FinalProjectEditor Editor Linux Development (FinalProject)",
+			"compilerPath": "/home/dsmal/GitStuff/GameDev/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"compilerArgs": [
+				"-isysroot",
+				"/home/dsmal/GitStuff/GameDev/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu"
+			],
+			"cStandard": "c17",
+			"cppStandard": "c++20",
+			"intelliSenseMode": "clang-x64",
+			"compileCommands": "/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/.vscode/compileCommands_FinalProject.json"
+		},
+		{
+			"name": "Linux",
+			"compilerPath": "/home/dsmal/GitStuff/GameDev/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"compilerArgs": [
+				"-isysroot",
+				"/home/dsmal/GitStuff/GameDev/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu"
+			],
+			"cStandard": "c17",
+			"cppStandard": "c++20",
+			"intelliSenseMode": "clang-x64",
+			"compileCommands": "/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/.vscode/compileCommands_Default.json"
+		}
+	]
+}

@@ -1,0 +1,865 @@
+{
+	"folders": [
+		{
+			"name": "FinalProject",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "/home/dsmal/GitStuff/GameDev/UnrealEngine"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "FinalProject Linux Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FinalProject",
+					"Linux",
+					"Debug",
+					"/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/FinalProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine"
+				}
+			},
+			{
+				"label": "FinalProject Linux Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FinalProject",
+					"Linux",
+					"Debug",
+					"/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/FinalProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"FinalProject Linux Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine"
+				}
+			},
+			{
+				"label": "FinalProject Linux Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FinalProject",
+					"Linux",
+					"Debug",
+					"/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/FinalProject.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine"
+				}
+			},
+			{
+				"label": "FinalProject Linux DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FinalProject",
+					"Linux",
+					"DebugGame",
+					"/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/FinalProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine"
+				}
+			},
+			{
+				"label": "FinalProject Linux DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FinalProject",
+					"Linux",
+					"DebugGame",
+					"/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/FinalProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"FinalProject Linux DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine"
+				}
+			},
+			{
+				"label": "FinalProject Linux DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FinalProject",
+					"Linux",
+					"DebugGame",
+					"/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/FinalProject.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine"
+				}
+			},
+			{
+				"label": "FinalProject Linux Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FinalProject",
+					"Linux",
+					"Development",
+					"/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/FinalProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine"
+				}
+			},
+			{
+				"label": "FinalProject Linux Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FinalProject",
+					"Linux",
+					"Development",
+					"/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/FinalProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"FinalProject Linux Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine"
+				}
+			},
+			{
+				"label": "FinalProject Linux Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FinalProject",
+					"Linux",
+					"Development",
+					"/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/FinalProject.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine"
+				}
+			},
+			{
+				"label": "FinalProject Linux Test Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FinalProject",
+					"Linux",
+					"Test",
+					"/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/FinalProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine"
+				}
+			},
+			{
+				"label": "FinalProject Linux Test Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FinalProject",
+					"Linux",
+					"Test",
+					"/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/FinalProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"FinalProject Linux Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine"
+				}
+			},
+			{
+				"label": "FinalProject Linux Test Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FinalProject",
+					"Linux",
+					"Test",
+					"/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/FinalProject.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine"
+				}
+			},
+			{
+				"label": "FinalProject Linux Shipping Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FinalProject",
+					"Linux",
+					"Shipping",
+					"/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/FinalProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine"
+				}
+			},
+			{
+				"label": "FinalProject Linux Shipping Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FinalProject",
+					"Linux",
+					"Shipping",
+					"/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/FinalProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"FinalProject Linux Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine"
+				}
+			},
+			{
+				"label": "FinalProject Linux Shipping Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FinalProject",
+					"Linux",
+					"Shipping",
+					"/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/FinalProject.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine"
+				}
+			},
+			{
+				"label": "FinalProject LinuxArm64 Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FinalProject",
+					"LinuxArm64",
+					"Debug",
+					"/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/FinalProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine"
+				}
+			},
+			{
+				"label": "FinalProject LinuxArm64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FinalProject",
+					"LinuxArm64",
+					"Debug",
+					"/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/FinalProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"FinalProject LinuxArm64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine"
+				}
+			},
+			{
+				"label": "FinalProject LinuxArm64 Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FinalProject",
+					"LinuxArm64",
+					"Debug",
+					"/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/FinalProject.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine"
+				}
+			},
+			{
+				"label": "FinalProject LinuxArm64 DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FinalProject",
+					"LinuxArm64",
+					"DebugGame",
+					"/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/FinalProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine"
+				}
+			},
+			{
+				"label": "FinalProject LinuxArm64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FinalProject",
+					"LinuxArm64",
+					"DebugGame",
+					"/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/FinalProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"FinalProject LinuxArm64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine"
+				}
+			},
+			{
+				"label": "FinalProject LinuxArm64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FinalProject",
+					"LinuxArm64",
+					"DebugGame",
+					"/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/FinalProject.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine"
+				}
+			},
+			{
+				"label": "FinalProject LinuxArm64 Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FinalProject",
+					"LinuxArm64",
+					"Development",
+					"/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/FinalProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine"
+				}
+			},
+			{
+				"label": "FinalProject LinuxArm64 Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FinalProject",
+					"LinuxArm64",
+					"Development",
+					"/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/FinalProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"FinalProject LinuxArm64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine"
+				}
+			},
+			{
+				"label": "FinalProject LinuxArm64 Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FinalProject",
+					"LinuxArm64",
+					"Development",
+					"/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/FinalProject.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine"
+				}
+			},
+			{
+				"label": "FinalProject LinuxArm64 Test Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FinalProject",
+					"LinuxArm64",
+					"Test",
+					"/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/FinalProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine"
+				}
+			},
+			{
+				"label": "FinalProject LinuxArm64 Test Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FinalProject",
+					"LinuxArm64",
+					"Test",
+					"/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/FinalProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"FinalProject LinuxArm64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine"
+				}
+			},
+			{
+				"label": "FinalProject LinuxArm64 Test Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FinalProject",
+					"LinuxArm64",
+					"Test",
+					"/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/FinalProject.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine"
+				}
+			},
+			{
+				"label": "FinalProject LinuxArm64 Shipping Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FinalProject",
+					"LinuxArm64",
+					"Shipping",
+					"/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/FinalProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine"
+				}
+			},
+			{
+				"label": "FinalProject LinuxArm64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FinalProject",
+					"LinuxArm64",
+					"Shipping",
+					"/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/FinalProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"FinalProject LinuxArm64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine"
+				}
+			},
+			{
+				"label": "FinalProject LinuxArm64 Shipping Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FinalProject",
+					"LinuxArm64",
+					"Shipping",
+					"/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/FinalProject.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine"
+				}
+			},
+			{
+				"label": "FinalProjectEditor Linux Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FinalProjectEditor",
+					"Linux",
+					"Debug",
+					"/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/FinalProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine"
+				}
+			},
+			{
+				"label": "FinalProjectEditor Linux Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FinalProjectEditor",
+					"Linux",
+					"Debug",
+					"/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/FinalProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"FinalProjectEditor Linux Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine"
+				}
+			},
+			{
+				"label": "FinalProjectEditor Linux Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FinalProjectEditor",
+					"Linux",
+					"Debug",
+					"/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/FinalProject.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine"
+				}
+			},
+			{
+				"label": "FinalProjectEditor Linux DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FinalProjectEditor",
+					"Linux",
+					"DebugGame",
+					"/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/FinalProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine"
+				}
+			},
+			{
+				"label": "FinalProjectEditor Linux DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FinalProjectEditor",
+					"Linux",
+					"DebugGame",
+					"/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/FinalProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"FinalProjectEditor Linux DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine"
+				}
+			},
+			{
+				"label": "FinalProjectEditor Linux DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FinalProjectEditor",
+					"Linux",
+					"DebugGame",
+					"/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/FinalProject.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine"
+				}
+			},
+			{
+				"label": "FinalProjectEditor Linux Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FinalProjectEditor",
+					"Linux",
+					"Development",
+					"/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/FinalProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine"
+				}
+			},
+			{
+				"label": "FinalProjectEditor Linux Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FinalProjectEditor",
+					"Linux",
+					"Development",
+					"/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/FinalProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"FinalProjectEditor Linux Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine"
+				}
+			},
+			{
+				"label": "FinalProjectEditor Linux Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FinalProjectEditor",
+					"Linux",
+					"Development",
+					"/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/FinalProject.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch FinalProject (Debug)",
+				"request": "launch",
+				"program": "/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/Binaries/Linux/FinalProject-Linux-Debug",
+				"preLaunchTask": "FinalProject Linux Debug Build",
+				"args": [
+				],
+				"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine",
+				"type": "cppdbg",
+				"visualizerFile": "/home/dsmal/GitStuff/GameDev/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch FinalProject (DebugGame)",
+				"request": "launch",
+				"program": "/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/Binaries/Linux/FinalProject-Linux-DebugGame",
+				"preLaunchTask": "FinalProject Linux DebugGame Build",
+				"args": [
+				],
+				"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine",
+				"type": "cppdbg",
+				"visualizerFile": "/home/dsmal/GitStuff/GameDev/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch FinalProject (Development)",
+				"request": "launch",
+				"program": "/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/Binaries/Linux/FinalProject",
+				"preLaunchTask": "FinalProject Linux Development Build",
+				"args": [
+				],
+				"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine",
+				"type": "cppdbg",
+				"visualizerFile": "/home/dsmal/GitStuff/GameDev/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch FinalProject (Test)",
+				"request": "launch",
+				"program": "/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/Binaries/Linux/FinalProject-Linux-Test",
+				"preLaunchTask": "FinalProject Linux Test Build",
+				"args": [
+				],
+				"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine",
+				"type": "cppdbg",
+				"visualizerFile": "/home/dsmal/GitStuff/GameDev/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch FinalProject (Shipping)",
+				"request": "launch",
+				"program": "/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/Binaries/Linux/FinalProject-Linux-Shipping",
+				"preLaunchTask": "FinalProject Linux Shipping Build",
+				"args": [
+				],
+				"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine",
+				"type": "cppdbg",
+				"visualizerFile": "/home/dsmal/GitStuff/GameDev/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch FinalProjectEditor (Debug)",
+				"request": "launch",
+				"program": "/home/dsmal/GitStuff/GameDev/UnrealEngine/Engine/Binaries/Linux/UnrealEditor-Linux-Debug",
+				"preLaunchTask": "FinalProjectEditor Linux Debug Build",
+				"args": [
+					"/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/FinalProject.uproject"
+				],
+				"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine",
+				"type": "cppdbg",
+				"visualizerFile": "/home/dsmal/GitStuff/GameDev/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch FinalProjectEditor (DebugGame)",
+				"request": "launch",
+				"program": "/home/dsmal/GitStuff/GameDev/UnrealEngine/Engine/Binaries/Linux/UnrealEditor-Linux-DebugGame",
+				"preLaunchTask": "FinalProjectEditor Linux DebugGame Build",
+				"args": [
+					"/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/FinalProject.uproject"
+				],
+				"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine",
+				"type": "cppdbg",
+				"visualizerFile": "/home/dsmal/GitStuff/GameDev/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch FinalProjectEditor (Development)",
+				"request": "launch",
+				"program": "/home/dsmal/GitStuff/GameDev/UnrealEngine/Engine/Binaries/Linux/UnrealEditor",
+				"preLaunchTask": "FinalProjectEditor Linux Development Build",
+				"args": [
+					"/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/FinalProject.uproject"
+				],
+				"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine",
+				"type": "cppdbg",
+				"visualizerFile": "/home/dsmal/GitStuff/GameDev/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Linux Development Build",
+				"program": "/home/dsmal/GitStuff/GameDev/UnrealEngine/Engine/Build/BatchFiles/RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=/home/dsmal/Documents/Unreal Projects/FinalProject/FinalProject/FinalProject.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"console": "internalConsole",
+				"internalConsoleOptions": "openOnSessionStart",
+				"stopAtEntry": false,
+				"cwd": "/home/dsmal/GitStuff/GameDev/UnrealEngine"
+			}
+		]
+	}
+}

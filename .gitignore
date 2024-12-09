@@ -1,0 +1,24 @@
+# Compiled binary files
+Binaries/
+Build/
+
+# Intermediate files
+Intermediate/
+
+# Cache files
+Saved/
+DerivedDataCache/
+
+# User-specific settings
+*.user
+*.userprefs
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+
+# IDE project files
+.idea/
+*.vcxproj*
+*.xcodeproj
+
